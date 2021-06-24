@@ -1,0 +1,137 @@
+
+body{
+    background-image: url('phonebg.png');
+    font-family: "Times New Roman", Times, serif;
+}
+
+.wrapper{
+    width: 100%;
+    margin:0 auto;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.links{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    word-spacing: 15px;
+}
+
+
+.links a{
+    display: inline-block;
+    text-decoration: none;
+    white-space: 5px;
+    color: black;
+    font-size: 12px;
+
+}
+
+img{
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 35%;
+    display: block;
+    maring: 0 auto;
+    float: left;
+}
+
+.items{
+    background-color: white;
+    border-radius: 10px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.items p{
+    position: relative;
+    left: 20px;
+    text-align: center;
+    width: 90%;
+    vertical-align: center;
+}
+
+
+
+@keyframes portfolio-height{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 75px;
+    }
+}
+
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.portfolio-title{
+    position: relative;
+    top: -25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    animation: portfolio-height 2s;
+    animation-fill-mode:forwards;
+}
+
+.portfolio-title p{
+    font-size: 175%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    opacity: 0;
+    animation: opacity 2s;
+    animation-fill-mode:forwards;
+}
+
+
+@media only screen and (min-width: 320px){
+    .portfolio-title p{
+        font-size: 150%;
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 320px){
+    .portfolio-title p{
+        font-size: 125%;
+    }
+}
+
+
+@media only screen and (min-width: 540px) and (max-width:1024px){
+    .wrapper{
+        width: 40%;
+    }
+    .items{
+        width: 100%;
+        font-size: 100%;
+    }
+    .portfolio-title p{
+        font-size: 130%;
+    }
+
+
+ }
+
+
