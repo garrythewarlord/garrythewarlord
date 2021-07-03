@@ -1,8 +1,11 @@
 
 
+body{
+	font-family: "comfortaa",sans-serif;
+}
+
 .wrapper{
 	width: 100%;
-	font-family: "comfortaa",sans-serif;
 }
 
 h1{
@@ -44,4 +47,58 @@ p {
 }
 
 
+.item img{
 
+	width: 30%;
+	border-radius: 15px;
+}
+
+
+.item{
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	left: 50%;
+	text-align: center;
+	padding-bottom: 5px;
+}	
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.nav-bar{
+		width: 60%;
+		margin: auto;
+		left: 50%;
+	}
+	.nav-bar ul{
+		text-align: center;
+	}
+	.nav-bar ul li {
+		display: inline-block;
+	}
+  	
+  	p{	
+  		padding-top: 0px;
+		padding-left: 0px;
+  		font-size: 15px;
+  		text-align: center;
+  	}
+
+
+}
+
+
+@media (min-width: 900px){
+	.item img{
+		width: 15%;
+	}
+
+	p{
+		text-align: center;
+		padding-top: 0px;
+		padding-left: 0px;
+		font-size: 1.5rem;
+	}
+}
